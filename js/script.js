@@ -16,3 +16,4 @@ for (let i = 0; i < listaSpesa.length; i++){
     wrapper.appendChild(listEl);
 };
 
+
