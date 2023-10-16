@@ -1,4 +1,4 @@
-
+const wrapper = document.getElementById("wrapper");
 let product = "";
 let listaSpesa = [];
 while (product !== "stop" ){
@@ -8,3 +8,9 @@ while (product !== "stop" ){
 }
 listaSpesa.pop(-1);
 console.log(listaSpesa);
+wrapper.innerHTML = `
+    <div class = "container m-3"> 
+        ${listaSpesa}
+    </div>
+    `;
+
