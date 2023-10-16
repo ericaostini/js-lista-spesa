@@ -10,7 +10,7 @@ while (product !== "stop" ){
 console.log(listaSpesa);
 
 const wrapper = document.getElementById("wrapper");
-for (i = 0; i < listaSpesa.length; i++){
+for (let i = 0; i < listaSpesa.length; i++){
     const listEl = document.createElement("li");
     listEl.innerHTML = listaSpesa[i];
     wrapper.appendChild(listEl);
