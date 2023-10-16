@@ -1,17 +1,18 @@
-const wrapper = document.getElementById("wrapper");
-let product = "";
+let product = " ";
 let listaSpesa = [];
+
 while (product !== "stop" ){
     product = prompt("Che prodotto vuoi acquistare?");
-    console.log(product);
-    listaSpesa.push(product);
+    if (product !== "stop" && product !== " "){
+        listaSpesa.push(product);
+    }
 }
-listaSpesa.pop(-1);
 console.log(listaSpesa);
-wrapper.innerHTML = `
-    <div class = "container m-3"> 
-        <h1> Lista della spesa </h1>
-        <p>${listaSpesa}</p>
-    </div>
-    `;
+
+const wrapper = document.getElementById("wrapper");
+for (i = 0; i < listaSpesa.length; i++){
+    const listEl = document.createElement("li");
+    listEl.innerHTML = listaSpesa[i];
+    wrapper.appendChild(listEl);
+};
 
