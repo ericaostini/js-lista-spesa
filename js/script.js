@@ -10,7 +10,8 @@ listaSpesa.pop(-1);
 console.log(listaSpesa);
 wrapper.innerHTML = `
     <div class = "container m-3"> 
-        ${listaSpesa}
+        <h1> Lista della spesa </h1>
+        <p>${listaSpesa}</p>
     </div>
     `;
 
